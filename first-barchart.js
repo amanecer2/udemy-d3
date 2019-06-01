@@ -10,7 +10,7 @@
     const graphHeight = height - margin.top - margin.bottom;
     const graphWidth = width - margin.right - margin.left;
 
-    const data = await d3.json('./udemy/3.13.0/data/revenues.json');
+    const data = await d3.json('./data/revenues.json');
     window._data = data;
 
     const _minDomain = d3.min(data, d => +d.profit);//getMinY(data);
